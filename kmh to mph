@@ -1,0 +1,38 @@
+#include <iostream>
+
+int main()
+
+{
+
+// Declare Var
+double speedmph;
+
+// Ask for current speed.
+std::cout << "\n";
+std::cout << "What is the speed in mph? \n";
+std::cout << "\n";
+std::cin >> speedmph;
+std::cout << "\n";
+
+// Write some input sanitization here incase people enter strange things.
+// https://www.learncpp.com/cpp-tutorial/stdcin-and-handling-invalid-input/
+
+// Convert new variables
+// Make them "int" instead of "double" if you dont want the decimal places.
+double speedkmh = (speedmph / 1.609;
+
+// show remainder
+std::cout << "The temp is " << speedmph << " degrees Fahrenheit. \n";
+std::cout << "The temp is " << speedkmh << " degrees Celsius. \n";
+std::cout << "\n";
+
+// This will pause and require a key to be struck, else the program will close since the returns is called.
+// Don't use this its not portable (mac/linux)
+system("pause");
+
+// I should be using something like???
+//std::cin.get();
+
+return 0;
+
+}
